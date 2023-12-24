@@ -1,0 +1,21 @@
+включаем фронт
+
+1. скачиваем  https://nodejs.org/en/download
+
+путь в терминале след: C:\Users\glebuga\Downloads\TechProg (короче открыта эта папка проекта)
+
+2. пишем - npm install
+3. пишем команду для запуска фронта - npm run dev
+
+
+включаем бэк
+
+лучше открыть в отдельном окне чтобы путь терминала был след: C:\Users\glebuga\Downloads\TechProg\backend (в папке backend)
+
+1. пишем - pip install -r requirements.txt (чтобы установились библиотеки для бэка)
+2. пишем команду для запуска бэка - uvicorn api:app --reload
+
+
+P.S в файле конфиг данные для подключения к БД
+Также в некоторых файлах есть пути которые тоже нужно изменить под вашу БД
+Base.metadata.create_all(create_engine("postgresql+psycopg2://postgres:321345@localhost/postgres", )) - Это мой путь ес чо =)
